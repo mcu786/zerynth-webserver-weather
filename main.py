@@ -56,6 +56,7 @@ try:
     # FOR THIS EXAMPLE TO WORK, "Network-Name" AND "Wifi-Password" MUST BE SET
     # TO MATCH YOUR ACTUAL NETWORK CONFIGURATION
     wifi.link("Wifi-AP",wifi.WIFI_WPA2,"password")
+
 except Exception as e:
     print("ooops, something wrong while conecting to Wifi Access Point:(", e)
     while True:
@@ -69,7 +70,7 @@ info = wifi.link_info()
 print("My IP is:",info[0])
 
 #Weather api key
-api_key = "Get api key from openweather.org"
+api_key = "Get api key from openweathermap.org"
 
 #Have global varable for storing weather information
 global Winfo
